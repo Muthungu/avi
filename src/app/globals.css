@@ -1,0 +1,21 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Panchang:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif; /* Use Inter for all body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Panchang', sans-serif; /* Use Panchang only for headings */
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
