@@ -9,7 +9,7 @@ const Vision: React.FC = () => {
       <div className="flex-1">
         <h3 className="text-2xl text-Primary font-semibold mb-4">Our Vision</h3>
         <p className="text-lg leading-relaxed">
-          To be a leader in patient-centered healthcare, ensuring that everyone has access to quality services.
+        To deliver holistic health services and support that empower individuals to make informed decisions about their health and well-being..
         </p>
       </div>
 

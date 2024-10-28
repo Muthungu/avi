@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       {/* Content overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 space-y-4">
         {/* Headline */}
-        <h1 className="text-[40px] md:text-[60px] lg:text-[80px] font-bold">
+        <h1 className="text-[40px] md:text-[60px] lg:text-[80px] font-bold font-panchang">
           Health pathways, as unique as you are
         </h1>
 
