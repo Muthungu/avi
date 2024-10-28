@@ -4,7 +4,7 @@ import Footer from "@/components/custom/footer";
 import Hero from "@/components/custom/hero";
 import TopNavigation from "@/components/custom/TopNavigation";
 import Working from "@/components/custom/working";
-import Image from "next/image";
+// import Image from "next/image";
 
 
 export default function Home() {

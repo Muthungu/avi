@@ -54,7 +54,7 @@ const ServicesSection: React.FC = () => {
           <CardContent>
             <p className="text-lg leading-relaxed">
               In addition to medical services, we offer personalized dietary advice and wellness programs to 
-              support patients' overall health and recovery.
+              support patients&apos; overall health and recovery.
             </p>
           </CardContent>
         </Card>
