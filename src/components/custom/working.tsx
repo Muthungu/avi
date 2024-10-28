@@ -6,12 +6,12 @@ const ServicesSection: React.FC = () => {
   return (
     <section
       id="services"
-      className="w-full h-screen flex flex-col items-center justify-center py-16 text-center bg-Accent" // Accent background color
+      className="w-full h-auto flex flex-col items-center justify-center py-28 text-center bg-Accent" // Accent background color
     >
       <h2 className="text-Primary text-4xl font-bold mb-8">Our Services</h2> {/* Primary color for heading */}
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[80vw] pt-10 "> {/* Adjust max width as needed */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-[80vw] mx-auto pt-10"> {/* Adjust max width as needed */}
         
         {/* Service 1: Cancer Diagnosis */}
         <Card className="shadow-md rounded-lg flex flex-col items-center p-6">

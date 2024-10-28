@@ -19,8 +19,8 @@ const Mission: React.FC = () => {
           src="/supportgroup.jpg" // Provide the image source if needed
           alt="Mission Image" // Provide a descriptive alt text
           className="rounded-lg" // Add any styling you want
-          width={800} // Set a larger width, if necessary
-          height={600} // Set a larger height, if necessary
+          width={700} // Set a larger width, if necessary
+          height={450} // Set a larger height, if necessary
         />
       </div>
     </div>

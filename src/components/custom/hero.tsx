@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-[95vw] mx-auto h-[43vw] md:h-[70vh] lg:h-[85vh] rounded-[20px] overflow-hidden bg-cover bg-center bg-hero-image pt-6">
+    <section className="relative w-[95vw] mx-auto h-[43vw] md:h-[70vh] lg:h-[85vh] rounded-[20px] overflow-hidden bg-cover bg-center bg-hero-image pt-10">
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent"></div>
       

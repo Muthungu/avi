@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,6 +11,21 @@ import { HiMenu, HiX } from 'react-icons/hi'; // Hamburger and close icons
 
 const TopNavigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Close the menu on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsMenuOpen(false);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <header className="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50">
@@ -80,7 +95,7 @@ const TopNavigation: React.FC = () => {
 
       {/* Mobile Menu (only visible when isMenuOpen is true) */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md">
+        <div className="md:hidden absolute top-24 left-0 w-full bg-white shadow-md"> {/* Adjusted top to 24 for spacing */}
           <div className="flex flex-col items-center py-4 space-y-4">
             <Link
               href="#about"

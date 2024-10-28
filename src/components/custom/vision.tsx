@@ -18,9 +18,9 @@ const Vision: React.FC = () => {
         <Image 
           src="/ladies support.jpg" // Your image source
           alt="Vision Image" // Provide a descriptive alt text
-          className="rounded-lg" // Add any styling you want
-          width={800} // Set a larger width
-          height={600} // Set a larger height
+          className="rounded-[20px]" // Add any styling you want
+          width={700} // Set a larger width
+          height={450} // Set a larger height
         />
       </div>
     </div>

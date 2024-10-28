@@ -18,9 +18,9 @@ const AboutSection: React.FC = () => {
   };
 
   return (
-    <section id="about" className="flex flex-col h-screen w-full bg-white overflow-hidden">
+    <section id="about" className="flex flex-col h-screen w-full bg-white overflow-hidden py-28">
       {/* Centered Heading and Tabs */}
-      <div className="flex flex-col items-center pt-40">
+      <div className="flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-4 text-Primary">About Us</h2> {/* Primary color for heading */}
         {/* Tab Links */}
         <div className="flex space-x-8 mb-6">
