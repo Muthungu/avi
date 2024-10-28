@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import Image from 'next/image'; // Use Next.js Image for optimized loading
 import Vision from './vision';
 import Mission from './mission';
 
@@ -19,31 +18,17 @@ const AboutSection: React.FC = () => {
   };
 
   return (
-    <section id="about" className="flex flex-col md:flex-row h-screen w-full bg-white">
-      {/* Left Side: Image */}
-      <div className="flex-1 flex justify-center items-center p-4">
-        <div className="relative w-3/4 h-3/4 rounded-lg overflow-hidden shadow-lg">
-          <Image
-            src="/blacksupport.jpg" // Update the image path
-            alt="About Us"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </div>
-      </div>
-
-      {/* Right Side: Vision and Mission Tabs */}
-      <div className="flex-1 flex flex-col justify-center items-start p-10 space-y-4">
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
-
+    <section id="about" className="flex flex-col h-screen w-full bg-white overflow-hidden">
+      {/* Centered Heading and Tabs */}
+      <div className="flex flex-col items-center pt-40">
+        <h2 className="text-4xl font-bold mb-4 text-Primary">About Us</h2> {/* Primary color for heading */}
         {/* Tab Links */}
-        <div className="flex space-x-8 mb-4">
+        <div className="flex space-x-8 mb-6">
           <span
             className={`cursor-pointer py-2 transition-all ${
               activeTab === 'vision' 
-                ? 'text-yellow-500 border-b-2 border-yellow-500'
-                : 'text-gray-800'
+                ? 'text-Secondary border-b-2 border-Secondary' // Secondary color for active tab
+                : 'text-Primary'
             }`}
             onClick={() => setActiveTab('vision')}
           >
@@ -52,17 +37,19 @@ const AboutSection: React.FC = () => {
           <span
             className={`cursor-pointer py-2 transition-all ${
               activeTab === 'mission' 
-                ? 'text-yellow-500 border-b-2 border-yellow-500'
-                : 'text-gray-800'
+                ? 'text-Secondary border-b-2 border-Secondary' // Secondary color for active tab
+                : 'text-Primary'
             }`}
             onClick={() => setActiveTab('mission')}
           >
             Mission
           </span>
         </div>
+      </div>
 
-        {/* Render Content Based on Active Tab */}
-        <div className="w-full">
+      {/* Content Section */}
+      <div className="flex-1 flex justify-center items-start p-10 overflow-hidden">
+        <div className="w-full"> {/* Set max width for content area */}
           {renderContent()}
         </div>
       </div>

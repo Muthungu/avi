@@ -1,13 +1,28 @@
 // components/Vision.tsx
 import React from 'react';
+import Image from 'next/image'; // Use Next.js Image for optimized loading
 
 const Vision: React.FC = () => {
   return (
-    <div>
-      <h3 className="text-2xl font-semibold mb-4">Our Vision</h3>
-      <p className="text-lg">
-        To be a leader in patient-centered healthcare, ensuring that everyone has access to quality services.
-      </p>
+    <div className="w-[80vw] mx-auto flex flex-col md:flex-row p-10 space-y-8 md:space-y-0 md:space-x-8"> {/* Set width to 80vw */}
+      {/* Left Side: Text Content */}
+      <div className="flex-1">
+        <h3 className="text-2xl text-Primary font-semibold mb-4">Our Vision</h3>
+        <p className="text-lg leading-relaxed">
+          To be a leader in patient-centered healthcare, ensuring that everyone has access to quality services.
+        </p>
+      </div>
+
+      {/* Right Side: Larger Image */}
+      <div className="flex-none w-full md:w-1/2">
+        <Image 
+          src="/ladies support.jpg" // Your image source
+          alt="Vision Image" // Provide a descriptive alt text
+          className="rounded-lg" // Add any styling you want
+          width={800} // Set a larger width
+          height={600} // Set a larger height
+        />
+      </div>
     </div>
   );
 };

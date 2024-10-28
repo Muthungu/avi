@@ -12,7 +12,9 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        customYellow: '#ECA518', // Replace with your custom color
+        Secondary: '#ECA518', // Replace with your custom color
+        Primary: '#461220', // Replace with your custom color
+        Accent: '#FFF1D3', // Replace with your custom color
       },
       borderRadius: {
         lg: 'var(--radius)',

@@ -23,7 +23,7 @@ const TopNavigation: React.FC = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href="#about"
-                    className="text-brown-700 hover:text-blue-500 transition-colors"
+                    className="text-Primary hover:text-Secondary transition-colors"
                   >
                     About Us
                   </Link>
@@ -33,7 +33,7 @@ const TopNavigation: React.FC = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href="#services"
-                    className="text-brown-700 hover:text-blue-500 transition-colors"
+                    className="text-Primary hover:text-Secondary transition-colors"
                   >
                     Our Services
                   </Link>
@@ -58,7 +58,7 @@ const TopNavigation: React.FC = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href="#contact"
-                    className="text-brown-700 px-9 py-2 hover:text-blue-500 transition-colors"
+                    className="text-Primary hover:text-Secondary px-9 py-2 transition-colors"
                   >
                     Contact Us
                   </Link>
@@ -84,21 +84,21 @@ const TopNavigation: React.FC = () => {
           <div className="flex flex-col items-center py-4 space-y-4">
             <Link
               href="#about"
-              className="text-brown-700 hover:text-blue-500 transition-colors"
+              className="text-Primary hover:text-Secondary transition-colors"
               onClick={() => setIsMenuOpen(false)} // Close menu on item click
             >
               About Us
             </Link>
             <Link
               href="#services"
-              className="text-brown-700 hover:text-blue-500 transition-colors"
+              className="text-Primary hover:text-Secondary transition-colors"
               onClick={() => setIsMenuOpen(false)} // Close menu on item click
             >
               Our Services
             </Link>
             <Link
               href="#contact"
-              className="text-brown-700 hover:text-blue-500 transition-colors"
+              className="text-Primary hover:text-Secondary transition-colors"
               onClick={() => setIsMenuOpen(false)} // Close menu on item click
             >
               Contact Us

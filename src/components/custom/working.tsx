@@ -4,19 +4,22 @@ import { FaStethoscope, FaUsers, FaAppleAlt } from 'react-icons/fa'; // Import i
 
 const ServicesSection: React.FC = () => {
   return (
-    <section id="services" className="w-full h-screen flex flex-col items-center justify-center py-16 text-center">
-      <h2 className="text-4xl font-bold mb-8">Our Services</h2>
+    <section
+      id="services"
+      className="w-full h-screen flex flex-col items-center justify-center py-16 text-center bg-Accent" // Accent background color
+    >
+      <h2 className="text-Primary text-4xl font-bold mb-8">Our Services</h2> {/* Primary color for heading */}
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[90vw] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[80vw] pt-10 "> {/* Adjust max width as needed */}
         
         {/* Service 1: Cancer Diagnosis */}
         <Card className="shadow-md rounded-lg flex flex-col items-center p-6">
-          <div className="text-4xl mb-4">
+          <div className="text-Secondary text-4xl mb-4"> {/* Secondary color for icons */}
             <FaStethoscope />
           </div>
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold">Cancer Diagnosis</CardTitle>
+            <CardTitle className="text-Primary text-2xl font-semibold">Cancer Diagnosis</CardTitle> {/* Primary color for heading */}
           </CardHeader>
           <CardContent>
             <p className="text-lg leading-relaxed">
@@ -29,11 +32,11 @@ const ServicesSection: React.FC = () => {
 
         {/* Service 2: Patient Navigation */}
         <Card className="shadow-md rounded-lg flex flex-col items-center p-6">
-          <div className="text-4xl mb-4">
+          <div className="text-Secondary text-4xl mb-4"> {/* Secondary color for icons */}
             <FaUsers />
           </div>
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold">Patient Navigation</CardTitle>
+            <CardTitle className="text-Primary text-2xl font-semibold">Patient Navigation</CardTitle> {/* Primary color for heading */}
           </CardHeader>
           <CardContent>
             <p className="text-lg leading-relaxed">
@@ -45,11 +48,11 @@ const ServicesSection: React.FC = () => {
 
         {/* Service 3: Wellness and Dietary Advice */}
         <Card className="shadow-md rounded-lg flex flex-col items-center p-6">
-          <div className="text-4xl mb-4">
+          <div className="text-Secondary text-4xl mb-4"> {/* Secondary color for icons */}
             <FaAppleAlt />
           </div>
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold">Wellness & Dietary Advice</CardTitle>
+            <CardTitle className="text-Primary text-2xl font-semibold">Wellness & Dietary Advice</CardTitle> {/* Primary color for heading */}
           </CardHeader>
           <CardContent>
             <p className="text-lg leading-relaxed">
