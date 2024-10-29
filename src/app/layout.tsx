@@ -17,8 +17,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Panchang:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+        {/* Link to Panchang font from Fontshare */}
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/css?f[]=panchang@400,500,600,700&display=swap"
         />
       </head>
       <body className="antialiased font-inter">

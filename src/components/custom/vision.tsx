@@ -4,7 +4,7 @@ import Image from 'next/image'; // Use Next.js Image for optimized loading
 
 const Vision: React.FC = () => {
   return (
-    <div className="w-[80vw] mx-auto flex flex-col md:flex-row p-10 space-y-8 md:space-y-0 md:space-x-8 justify-between"> {/* Set width to 80vw */}
+    <div className="w-[80vw] mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 justify-between"> {/* Set width to 80vw */}
       {/* Left Side: Text Content */}
       <div className="flex-1">
         <h3 className="text-2xl text-Primary font-semibold mb-4">Our Vision</h3>
