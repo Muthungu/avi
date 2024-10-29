@@ -4,7 +4,7 @@ import Image from 'next/image'; // Optional, in case you want to add an image la
 
 const Mission: React.FC = () => {
   return (
-    <div className="w-[80vw] mx-auto flex flex-col md:flex-row p-10 space-y-8 md:space-y-0 md:space-x-8"> {/* Match width and layout */}
+    <div className="w-[80vw] mx-auto flex flex-col md:flex-row p-10 space-y-8 md:space-y-0 md:space-x-8 justify-between"> {/* Match width and layout */}
       {/* Left Side: Text Content */}
       <div className="flex-1">
         <h3 className="text-2xl text-Primary font-semibold mb-4">Our Mission</h3>
